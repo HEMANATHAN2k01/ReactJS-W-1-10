@@ -1,0 +1,35 @@
+/* .for
+{
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    width: 50%;
+    margin: 2% auto;
+} */
+
+.name
+{
+    padding: 2%;
+}
+
+.Name,.Gen-DOB
+{
+    margin: 0.5% 0 2% 0;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.fname
+{
+    padding-right: 2%;
+}
+.num-mail
+{
+    /* margin: 2% 0 2% 0; */
+    /* display: flex; */
+    justify-content: space-evenly;
+}
+
+.in
+{
+    width: 60%;
+}

@@ -1,0 +1,119 @@
+http://localhost:1337/api/carts
+
+
+import { Button } from "react-bootstrap";
+import { useState } from "react";
+
+export default function Cart() {
+    const [cart, setCart] = useState([])
+    const [stock, setStock] = useState(
+        [
+            {
+                name:'Oranges',inStock:5
+            },
+            {
+                name:'Apples',inStock:4
+            },
+            {
+                name:'Grape',inStock:2
+            }
+        ]
+    )
+
+    const moveToCart = (item, qua) =>
+    {
+        let [name, number] = [item, qua]
+    
+
+    let newStock = stock.map((item, index)=>
+    {
+        if(item.name === name)
+        item.inStock--
+        return item
+    })
+    setStock(newStock)
+    setCart([...cart, name])
+    
+    }
+
+    const updateList = stock.map((item, index)=>
+    
+        <Button key={index} onClick={()=>moveToCart(item.name,item.inStock)}>{item.name}</Button>
+    )
+
+    const updatecart = cart.map((item, index)=>
+    
+        <Button key={index}>{item}</Button>
+    )
+    return(
+        <div>
+            <ul>{updateList}</ul>
+            <h1>Shopping Cart</h1>
+            <ul>{updatecart}</ul>
+        </div>
+    )
+}
+
+
+import { useState } from "react";
+export default function App() {
+  const [state, setState] = useState({
+    initialized: false,
+    productName: null,
+    productDescription: null,
+    productPrice: null
+  });
+let initializeState = () => {
+  ({
+    initialized:true,
+  productName:'Rice Krispies',
+  productDescription:'a cereal made of popped rice',
+  productPrice:'$3.00'
+  })
+
+    return state;
+  };
+
+  const { initialized } = state;
+    const str = `The product name is ${state.productName}, product description is ${state.productDescription} and the product price is ${state.productPrice}`;
+
+  if (state.initialized) {
+    return <h1>{str}</h1>;  } else {
+    return (
+      <>
+        <button onClick={() => initializeState()}>
+          Click here to initialize your state{" "}
+        </button>
+      </>
+    );
+  }
+}
+
+-----------Unit-5 Rough ------------------------
+
+
+export default function Rough() {
+    let deposit = 0
+    let bal = 0
+    // let balance = `Your Account balance is ${}`
+
+    function handleChange(e) {
+        e.preventDefault()
+        deposit = Number(e.target.value)
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault()
+        bal = bal + deposit
+        console.log(bal)
+        document.getElementById('hello').innerHTML=bal
+    }
+
+    return(
+        <form onSubmit={handleSubmit}>
+            <h1 id='hello'>Balance is : {bal}</h1>
+            <input type="number" onChange={handleChange}  />
+            <button type="submit">Add</button>
+        </form>
+    )
+}

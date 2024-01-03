@@ -1,0 +1,43 @@
+.listBorder
+{
+    background-color: lightgreen;
+    margin: 2% auto;
+    width: 59%;
+    padding: 1%;
+    box-shadow: 0 5px 20px 0 black;
+}
+
+.listItems
+{
+    list-style: none;
+    font-size: larger;
+    margin-bottom: 1% ;
+}
+
+#input
+{
+    width: 50%;
+    height: 2%;
+    font-size: 200%;
+    padding-left: 10px;
+
+}
+
+.addListItems
+{
+    background-color: lightblue;
+    padding: 4%;
+    border-radius: 5px;
+    box-shadow: 0 2px 20px 0 rebeccapurple;
+    margin-bottom: 2%;
+}
+
+.but
+{
+    margin-left: 10px;
+}
+
+.remove
+{
+    float: right;
+}

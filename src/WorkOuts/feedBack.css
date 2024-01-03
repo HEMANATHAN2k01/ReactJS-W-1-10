@@ -1,0 +1,119 @@
+*
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.main
+{
+    width: 70%;
+    margin: 1% auto;
+    border: 2px solid black;
+
+}
+
+.top
+{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.top h1
+{
+    color: white;
+}
+
+.info
+{
+    margin: 3%;
+}
+
+span
+{
+    color: red;
+    font-weight: bolder;
+}
+
+#blue
+{
+    color: #0f0f4e;
+}
+
+.info label
+{
+    color: #0f0f4e;
+    font-weight: bold;
+}
+
+.info input
+{
+    
+    margin-bottom: 10px;
+    width: 90%;
+    height: 6vh;
+}
+
+.radio
+{
+    margin: 3%;
+}
+
+.radio p
+{
+    color: #0f0f4e;
+    font-weight: bolder;
+}
+
+.text
+{
+    margin: 3%;
+}
+
+.text p
+{
+    color: #0f0f4e;
+    font-weight: bolder;
+}
+
+.text textarea
+{
+    width: 90%;
+}
+
+.check
+{
+    margin: 3%;
+}
+
+.check p
+{
+    color: #0f0f4e;
+    font-weight: bolder;
+}
+
+.star
+{
+    margin: 3%;
+}
+
+.star p
+{
+    color: #0f0f4e;
+    font-weight: bolder;
+}
+
+.stars
+{
+    display: flex;
+}
+
+.stars div
+{
+    padding-right: 5%;
+}
+
+.sendButton
+{
+    margin: 3%;
+}

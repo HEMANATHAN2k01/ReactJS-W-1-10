@@ -1,0 +1,22 @@
+.display
+{
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.dis
+{
+    margin-right: 10px;
+}
+
+img
+{
+    padding: 6%;
+    transition: all .5s ease;
+}
+
+Img:hover
+{
+    border-radius: 50%;
+    /* border: 2px solid black; */
+}
